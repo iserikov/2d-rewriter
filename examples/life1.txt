@@ -1,0 +1,17 @@
+#  Well known "planer" pattern.
+#
+
+dimensions 600 600
+
+object ground  black
+object border  white
+
+object a       green
+
+use "life.rules"
+
+init a 299 299
+init a 299 300
+init a 301 300
+init a 299 301
+init a 300 301

@@ -1,0 +1,308 @@
+#  Set of rules simulating "life game".
+#
+
+rule
+  a      a      a
+  ground ground ground
+  ground ground ground a
+
+rule
+  a      a      ground
+  a      ground ground
+  ground ground ground a
+
+rule
+  a      ground a
+  a      ground ground
+  ground ground ground a
+
+rule
+  ground a      a
+  a      ground ground
+  ground ground ground a
+
+rule
+  ground ground ground
+  ground a      ground
+  ground ground ground ground
+
+rule
+  a      ground ground
+  ground a      ground
+  ground ground ground ground
+
+rule
+  ground a      ground
+  ground a      ground
+  ground ground ground ground
+
+rule
+  a      a      a
+  a      a      ground
+  ground ground ground ground
+
+rule
+  a      a      ground
+  ground ground a
+  ground ground ground a
+
+rule
+  a      ground a
+  ground ground a
+  ground ground ground a
+
+rule
+  a      ground ground
+  a      ground a
+  ground ground ground a
+
+rule
+  ground a      ground
+  a      ground a
+  ground ground ground a
+
+rule
+  ground ground a
+  a      ground a
+  ground ground ground a
+
+rule
+  a      a      a
+  ground a      a
+  ground ground ground ground
+
+rule
+  a      a      ground
+  a      a      a
+  ground ground ground ground
+
+rule
+  a      ground a
+  a      a      a
+  ground ground ground ground
+
+rule
+  ground a      a
+  a      a      a
+  ground ground ground ground
+
+rule
+  a      a      a
+  a      a      a
+  ground ground ground ground
+
+rule
+  a      ground a
+  ground ground ground
+  a      ground ground a
+
+rule
+  ground a      a
+  ground ground ground
+  a      ground ground a
+
+rule
+  ground ground a
+  a      ground ground
+  a      ground ground a
+
+rule
+  a      a      a
+  ground a      ground
+  a      ground ground ground
+
+rule
+  a      ground a
+  a      a      ground
+  a      ground ground ground
+
+rule
+  ground a      a
+  a      a      ground
+  a      ground ground ground
+
+rule
+  a      a      a
+  a      a      ground
+  a      ground ground ground
+
+rule
+  a      ground ground
+  ground ground a
+  a      ground ground a
+
+rule
+  ground a      ground
+  ground ground a
+  a      ground ground a
+
+rule
+  a      a      ground
+  ground a      a
+  a      ground ground ground
+
+rule
+  a      ground a
+  ground a      a
+  a      ground ground ground
+
+rule
+  ground a      a
+  ground a      a
+  a      ground ground ground
+
+rule
+  a      a      a
+  ground a      a
+  a      ground ground ground
+
+rule
+  a      ground ground
+  a      a      a
+  a      ground ground ground
+
+rule
+  ground a      ground
+  a      a      a
+  a      ground ground ground
+
+rule
+  a      a      ground
+  a      a      a
+  a      ground ground ground
+
+rule
+  ground ground a
+  a      a      a
+  a      ground ground ground
+
+rule
+  a      ground a
+  a      a      a
+  a      ground ground ground
+
+rule
+  ground a      a
+  a      a      a
+  a      ground ground ground
+
+rule
+  a      a      a
+  a      a      a
+  a      ground ground ground
+
+rule
+  a      ground a
+  a      a      ground
+  ground a      ground ground
+
+rule
+  ground a      a
+  a      a      ground
+  ground a      ground ground
+
+rule
+  a      a      a
+  a      a      ground
+  ground a      ground ground
+
+rule
+  ground a      ground
+  a      a      a
+  ground a      ground ground
+
+rule
+  a      a      ground
+  a      a      a
+  ground a      ground ground
+
+rule
+  a      ground a
+  a      a      a
+  ground a      ground ground
+
+rule
+  a      a      a
+  a      a      a
+  ground a      ground ground
+
+rule
+  a      ground a
+  ground a      ground
+  a      a      ground ground
+
+rule
+  ground a      a
+  ground a      ground
+  a      a      ground ground
+
+rule
+  a      a      a
+  ground a      ground
+  a      a      ground ground
+
+rule
+  a      ground a
+  a      a      ground
+  a      a      ground ground
+
+rule
+  ground a      a
+  a      a      ground
+  a      a      ground ground
+
+rule
+  a      a      a
+  a      a      ground
+  a      a      ground ground
+
+rule
+  a      ground a
+  ground a      a
+  a      a      ground ground
+
+rule
+  a      a      a
+  ground a      a
+  a      a      ground ground
+
+rule
+  a      ground a
+  a      a      a
+  a      a      ground ground
+
+rule
+  ground a      a
+  a      a      a
+  a      a      ground ground
+
+rule
+  a      a      a
+  a      a      a
+  a      a      ground ground
+
+rule
+  a      ground a
+  ground a      ground
+  a      ground a      ground
+
+rule
+  a      a      a
+  ground a      ground
+  a      ground a      ground
+
+rule
+  a      a      a
+  a      a      ground
+  a      ground a      ground
+
+rule
+  a      ground a
+  a      a      a
+  a      ground a      ground
+
+rule
+  a      a      a
+  a      a      a
+  a      ground a      ground
+

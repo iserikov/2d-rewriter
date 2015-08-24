@@ -1,0 +1,22 @@
+# Sierpinski triangle
+#
+# http://en.wikipedia.org/wiki/Sierpinski_triangle
+#
+
+dimensions 600 600
+
+object ground  black
+object border  white
+object a       red
+
+rule
+  ground ground ground
+  ground ground ground
+  a/up   ground ground a/up
+
+rule
+  ground ground ground
+  ground ground ground
+  ground ground a/up   a/up
+
+init a/up 300 300

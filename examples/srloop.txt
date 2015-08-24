@@ -1,0 +1,144 @@
+# Self replicating loop. Similar to:
+#
+# Simulations of Self Replicating Loops
+#      Frederic Boussinot
+#   EMP/INRIA, Mimosa Project
+#
+
+dimensions 600 600
+
+object ground  black
+object border  white
+object l       grey
+object a       red
+object e       green
+object b       yellow
+object i       blue
+object ia      lightblue
+object s       darkgray
+object os      magenta
+object og      cyan
+
+set sg  { a e b }              # Replaceable by sng
+set sbk { l ia }               # Replaceable by sg
+set sng { l a e }
+
+rule
+  *        *         *
+  b/right  l/up      *
+  *        *         *         os/up
+
+rule
+  *        ia/down  *
+  l/right  l/right   e/right
+  *        *         *         b/right
+
+rule
+  *        *         ia/down
+  *        l/right   b/right
+  *        *         *         s/up
+
+rule
+  *        sng       *
+  *        l/up      s/up
+  *        *         *         b/up
+
+rule
+  sng       *        *
+  b/up      s/up     *
+  *         *        *         ground/up
+
+rule
+  *        *         *
+  os/up    ground    ground
+  *        *         *         og/right
+
+rule
+  *        *         *
+  og/right ground    *
+  *        *         *         l/right
+
+rule
+  *        *         *
+  *        og/up     * 
+  *        *         *         l/up
+
+rule
+  *        *         *
+  *        os/up     og/right
+  *        *         *         l/up
+
+rule
+  *        *         *
+  *        ground    *
+  *        ia/up    *          i/up
+
+rule
+  *        *         *
+  a/right  i         *
+  *        *         *         ia/up
+
+rule
+  *        *         *
+  *        i         *
+  *        e/up      *         ia/up
+
+rule
+  ( X : sg )
+  *        *         *
+  *        sbk/up    *
+  *        X/up      *         X/up
+
+rule
+  ( X : sg )
+  *        *         *
+  X/right  sbk/up    *
+  *        *         *         X/up
+
+rule
+  ( X : sng )
+  *       *          *
+  *       sg/up      *
+  *       X/up       *         X/up
+
+rule
+  ( X : sng )
+  *       *         *
+  X/right sg/up     *
+  *       *         *         X/up
+
+rule
+  ( X : sg )
+  *       *         *
+  X/up   sng/right  *
+  *       *         *         X/right
+
+rule
+  ( X : sng )
+  *       *         *
+  X/up    sg/right  *
+  *       *         *         X/right
+
+rule
+  *       *         *
+  a/right ground    *
+  *       *         *         i/right
+
+init l/up 303 300
+init l/up 303 301
+init l/up 303 302
+
+init l/left 303 303
+init l/left 302 303
+init l/left 301 303
+
+init l/down 300 303
+init l/down 300 302
+init l/down 300 301
+
+init l/right 304 300
+init l/right 305 300
+
+init e/right 300 300
+init e/right 301 300
+init a/right 302 300

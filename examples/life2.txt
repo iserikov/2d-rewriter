@@ -1,0 +1,38 @@
+#  Yet another pattern.
+#
+
+dimensions 600 600
+
+object ground  black
+object border  white
+
+object a       blue
+
+use "life.rules"
+
+init a 296 299
+init a 297 299
+init a 298 299
+init a 299 299
+init a 300 299
+init a 301 299
+init a 302 299
+init a 303 299
+
+init a 296 300
+init a 298 300
+init a 299 300
+init a 300 300
+init a 301 300
+init a 303 300
+
+init a 296 301
+init a 297 301
+init a 298 301
+init a 299 301
+init a 300 301
+init a 301 301
+init a 302 301
+init a 303 301
+
+
