@@ -49,7 +49,7 @@ the orientation mark.
 decrease resolution 2 times, if possible.
 .It up
 move window up (against the data field).
-.It up
+.It down
 move window down (against the data field).
 .It left
 move window left (against the data field).
@@ -81,7 +81,7 @@ The preceding term must appear exactly n times.
 Alternative.
 .It ()
 Grouping.
-.It "x"
+.It \(dqx\(dq
 Literal `x'.
 .El
 .Pp
@@ -94,16 +94,16 @@ program   ::=          statement*
 
 statement ::=          "use" file_path_as_double_quoted_string
                      | "dimensions" width_as_integer height_as_integer
-                     | "object" object_name object_name
+                     | "object" object_name color
                      | "init" object_name x_as_integer y_as_integer
                      | "set" set_name "{" "(" object_name+ ")"+ "}"
                      | "set" set_name "{" object_name+ "}"
-                     | "rule" "(" variable_definition+ ")"? 
+                     | "rule" ( "(" variable_definition+ ")" )? 
                          pattern_element*9 result
 
-variable_definition := variable_name ":" set_name
+variable_definition ::= variable_name ":" set_name
 
-pattern_element :=     object_name
+pattern_element ::=    object_name
                      | set_name      ( "." position_as_integer )? ( "/" orientation )?
                      | variable_name ( "." position_as_integer )? ( "/" orientation )?
                      | "*" ( "/" orientation )?
