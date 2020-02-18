@@ -30,7 +30,7 @@
 #include "graphics.h"
 #include "view.h"
 
-#define VERSION "1.5"
+#define VERSION "1.6"
 
 #define ProcessEventsThreshold 1000 
 
